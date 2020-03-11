@@ -42,5 +42,5 @@ export interface MulterExtendedS3Options {
   /**
    * Custom Amazon S3 endpoint
    */
-  readonly endpoint?: string;
+  readonly endpoint: string;
 }
