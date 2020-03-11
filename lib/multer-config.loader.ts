@@ -22,6 +22,7 @@ export class MulterConfigLoader implements MulterS3ConfigService {
       accessKeyId: s3Options.accessKeyId,
       secretAccessKey: s3Options.secretAccessKey,
       region: s3Options.region || MulterConfigLoader.DEFAULT_REGION,
+      endpoint: s3Options.endpoint,
     });
 
     this.S3 = new AWS.S3();

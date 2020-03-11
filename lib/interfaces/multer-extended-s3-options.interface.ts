@@ -39,4 +39,8 @@ export interface MulterExtendedS3Options {
    * @see https://docs.nestjs.com/techniques/logger
    */
   readonly logger?: LoggerService;
+  /**
+   * Custom Amazon S3 endpoint
+   */
+  readonly endpoint?: string;
 }
