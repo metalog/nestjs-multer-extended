@@ -19,7 +19,7 @@
     "lint:fix": "tslint --fix -c tslint.json 'lib/**/*{.ts,.tsx}'",
     "build": "rimraf -rf dist && tsc -p tsconfig.json",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "prepare:npm": "npm run build",
+    "prepare": "npm run build",
     "publish:npm": "npm publish --access public",
     "prepare:next": "npm run build",
     "publish:next": "npm publish --access public --tag next"
